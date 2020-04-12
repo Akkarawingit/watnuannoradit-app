@@ -1,8 +1,8 @@
 {
   "name": "watnuannoradit-app",
   "version": "1.0.0",
-  "description": "Watnuannoraditheroku",
-  "main": "index.js",
+  "description": "",
+  "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Akkarawingit/watnuannoradit-app/issues"
   },
-  "homepage": "https://github.com/Akkarawingit/watnuannoradit-app#readme"
+  "homepage": "https://github.com/Akkarawingit/watnuannoradit-app#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
