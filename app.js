@@ -8,11 +8,16 @@ const port = process.env.PORT || 4000
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 app.post('/webhook', (req, res) => {
-    let reply_token = req.body.events[0].replyToken
+//    let reply_token = req.body.events[0].replyToken;
+    let reply_token = "test";
     reply(reply_token)
     res.sendStatus(200)
 })
-app.listen(port)
+
+app.listen(port, function () {
+    console.log('CORS-enabled web server listening on port ' + port);
+});
+
 function reply(reply_token) {
     let headers = {
         'Content-Type': 'application/json',
